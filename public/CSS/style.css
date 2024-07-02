@@ -1,0 +1,787 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html body {
+    font-family: "Nanun Myeongjo";
+    background: rgba(189, 171, 171, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header {
+    background:#4e4b4b;
+    font-weight: 1.7em;
+}
+
+.header nav h1 {
+    float: left;
+    padding: 15px 20px;
+    margin-bottom: 0px;
+    color: white;
+    font-family:"indie flower";
+    
+}
+
+#nav-header{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.header nav ul {
+    list-style: none;
+    display: flex;
+    line-height: 50px;
+}
+.header nav ul li {
+    padding: 0 20px;
+
+}
+
+.button-menu{
+    position: absolute;
+    line-height: 50px;
+    right: 20px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+
+.header nav  ul li:hover {
+    background: #f3c40a;
+}
+
+.active{
+    padding: 10px;
+    background: #f3c40a;
+}
+
+.tip{
+    color:#f3c40a ;
+    font-weight:350;
+}
+
+.vp {
+    background: url(../Images/house-409451_1280.jpg) center center / cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%; 
+    background-position: center;
+    height: 89vh;
+    display: flex;
+    background-size:cover; 
+    background-color: rgba(144, 219, 194, 0.2);
+    justify-content: center; 
+    align-items:center;  
+    
+    
+     
+}
+
+
+
+.vp-content{
+    margin:auto;
+    max-width:600px;
+    padding-top:140px;
+    color:white;
+    display: block;
+    
+    
+}
+
+
+vp-content h1{
+    font-size: 60px;
+    margin-bottom: 16px;
+   
+}
+
+.vp-content p{
+    font-weight: 20px;
+    line-height: 1.7rem;
+}
+
+
+/*apres le background*/
+
+.acquisition{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.suite-ac{
+width:80%;
+
+
+
+
+}
+.pinch img{
+    width: 100%;
+}
+
+
+
+.TitLe{
+    width: 100%;
+    font-weight:normal;
+    padding: 22px;
+    padding-left:16%;
+
+    font-size: 22px;
+    color:rgb(78, 69, 69);
+    text-align:left;
+      
+
+}
+
+
+#saisie{
+
+width:100%;
+display:grid;
+margin-top:20px;
+grid-template-columns:repeat( 3,1fr);
+padding:0px 16%;
+gap: 40px;
+margin-bottom:3.1rem;
+}
+
+
+.saisie img{
+    width:100%;
+    float:left;
+    margin-bottom:17px;
+}
+
+
+.pinch{
+    background-color: white;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(59, 55, 55);
+    text-align: center;
+    
+
+}
+.pinch p{
+    font-size: 14px;
+}
+
+.droite{
+    
+    margin: 14px auto;
+    height: 0.125rem;
+    width: 3.125rem;
+    background:gray; 
+    display: block; 
+    
+} 
+
+
+.pinch{
+    width: 100%;
+
+} 
+
+/*equipe akey*/
+
+
+.container{
+  display:flex;  
+  width:100%;
+  justify-content: center; 
+  box-sizing: border-box;
+}
+
+
+ .left {
+width:50%;
+box-sizing: border-box;
+  height:500px;  
+}
+
+
+.right {
+    display:flex;
+     width:50%;
+    background-color:black;
+    margin-bottom:4.5px;
+    text-align:justify;
+    border:2px;
+    box-sizing: border-box;
+    height:500px;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+.right div{
+width:90%;
+}
+
+.right h3{
+    
+    font-size:30px;
+    color:white;
+    padding-bottom: 10px ;
+
+}
+
+.right p{
+color:white;
+font-size:15px;
+
+}
+
+
+/*partie espace blanc*/
+
+#space{
+    background-color: white;
+    height:25px;
+}
+
+/*partie- avanttemoignage line et en tete*/
+
+
+
+.entete{
+    margin-bottom: 0;
+    font-size:18px;
+    color:rgb(179, 170, 170);
+    padding-bottom:2vw;
+    border-bottom:0.02rem solid rgb(179,170,179);
+    width: 100%;
+    
+
+}
+
+/*partie temoignage*/
+
+.temoignage-client{
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-bottom:0;
+    
+}
+
+
+
+.temoignage-rendu{
+    display:flex;
+    flex-direction:column;
+    width:80%;
+    align-items:center;
+    margin:20px;
+   margin-bottom:0;
+    position:relative;
+}
+
+
+ .item-temoignage{
+
+    background-color:white;
+    display:flex;
+    width:100%;
+    margin:22px 0 0 auto;
+    
+    align-items: center;
+    border-radius: 2px;
+    
+    
+    
+ }
+
+ 
+
+ .text-temoignage{
+    color:gray;
+    justify-content: center;
+    flex: auto 1;
+    padding: auto 15px;
+    position: relative;
+    
+ }
+
+
+ .text-temoignage i{
+  color:black;
+  font-size: 1.2rem;  
+ }
+
+ .text-temoignage i.fa-solid-fa-quote-left{
+    left:0.32rem;
+ }
+
+
+ .text-temoignage i.fa-solid-fa-quote-right{
+    right:0.32rem;
+    font-weight:400;
+ }
+ 
+
+.text-temoignage p{
+ font-size: 15px;
+ padding-left:30px;
+ 
+}
+
+
+.personne{
+    padding-bottom: 7px;
+    text-align: center;
+}
+
+
+.personne h4{
+font-size: 13px; 
+
+}
+
+
+
+
+#element{
+    color:gray;
+    padding:10px;
+    
+}
+
+ #commentsList{
+   width:100%;
+   padding-left:10%;
+   box-sizing: border-box;
+   /*display:flex;
+   justify-content: center;
+   flex-direction: column;*/
+ }
+
+/*partie image*/
+.picture-client{
+    display:flex;
+    margin: auto 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.picture-client img {
+ object-fit: cover;
+ border-radius: 50%;
+ width:100px;
+ height: 100px;
+ padding:18px;
+ margin-bottom:8px;   
+ margin-right: 2px; 
+       
+ }
+
+ /*pied de page*/
+
+footer{
+    
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color:#4e4b4b;
+}
+
+.footer p{
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+
+/*BIENVENUE DANS LA PARTIE CONTACT*/
+
+
+.boite h2{
+    text-align:center;
+    font-size: 36px;
+    
+}
+.contact{
+    padding: 100px 0px 100px 0px;
+    min-height:100vh;
+    border-radius: 5px;
+    background-color: gray;
+    
+    }
+    
+    .my-20{
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .contact form{
+        max-width: 600px;
+        margin:auto; 
+    }
+    .contact  form label{
+        display:block;
+        font-weight:700;
+        
+    }
+
+    .contact-form input,textarea{
+    display: block;
+    width: 100%;
+    padding:15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+    }
+    
+    .orange{
+        color:#fff;
+        background:teal;
+        display:inline;
+        cursor:pointer;
+        margin:4px 2px;
+        font-size: 20px;
+        margin: 4px 2px;
+        padding: 6px;
+        border-radius: 5px;
+      cursor:pointer; 
+      display: inline; 
+      justify-content: center;
+      text-align: center;
+      
+    }
+    
+    .orange:hover{
+        background: orangered;
+        color:#fff;
+
+    }
+
+
+
+
+    .orange{
+   margin: 0 auto;
+    }
+    .envoi{
+        align-items: center;
+    }
+    
+ 
+
+
+
+    /*BIENVENUE DANS L'ONGLET offre*/
+    .preferendi {
+        background: url(../Images/houses-5514892_960_720.jpg)center center;
+        text-align: center;
+        background-repeat: no-repeat;
+        width: 100%; 
+        background-position: center;
+        height: 40vh;
+        display: flex;
+        background-size:cover; 
+        background-color: rgba(144, 219, 194, 0.2);
+        justify-content: center; 
+        align-items:center;      
+    }
+    
+      
+    .preferen-content{
+        margin:auto;
+        max-width:600px;
+        padding-top:140px;
+        color:white;
+        display: block;       
+    }
+    
+   
+    .preferen-content p{
+        font-size: 10px;
+    }
+    .preferen-content h1{
+        font-size:30px;
+    }
+
+/*BIENVENUE DANS L'ONGLET EQUIPE*/
+
+
+.equipe{
+
+    background: url(../Images/team.jpeg.jpg) center center / cover;
+    padding: 100px 0px 100px 0px;
+    background-repeat: no-repeat;
+    overflow: auto;
+    width: 100%;
+    height: 700px;
+    align-items: center;
+    background-color:white;
+}
+
+h2
+{  
+    text-align: center;
+    color:orange;
+    font-size: 30px;
+}
+
+.equipe p
+{
+    padding: 10px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.coequipier
+{
+    float: left;
+    margin: 15px;
+    margin-top: 20px;
+    text-align: center;
+    width: 30%;  
+    color: #fcfaf4;
+    transition: all 0.2s ease;
+}
+.coequipier:hover{
+    transform: scale(1.04);
+}
+
+.coequipier img{
+    border-radius: 10%;
+}
+
+
+footer{
+    
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    background-color:#4e4b4b;
+}
+
+footer p{
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+
+/*responsive pour accueil*/
+
+  
+    @media screen and (max-width: 768px) {
+        #saisie {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px;
+        }}
+/*responsive equipe*/
+@media screen and (max-width: 768px) {
+    #links-menu{
+        position: absolute;
+        top: 50px;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        background-color: rgb(51, 51, 51);
+        display: none;
+    }
+
+    #links-menu.view{
+        display: flex;
+    }
+
+    .button-menu{
+        display: block;
+    }
+}
+
+/*responsive suite equipe*/
+
+@media screen and (max-width: 768px) {
+    .equipe {
+      padding: 50px 20px;
+    }
+  
+    .coequipier {
+      width: 100%;
+      margin: 15px 0;
+    }
+  
+    .coequipier img {
+      width: 100%;
+      height:400px;
+      
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    .equipe p {
+      font-size: 14px;
+    }
+  }
+
+
+/*responsive pour contact*/
+@media screen and (max-width: 768px) {
+    .contact {
+        padding: 50px 0;
+    }
+
+    .contact form {
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .contact {
+        padding: 30px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+
+.orange {
+    color: #fff;
+    background: teal;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+
+.orange:hover {
+    background: orangered;
+}
+
+
+.envoi {
+    text-align: center;
+}
+
+
+
+/* Style général pour le corps de la page */
+
+
+/* Style pour les en-têtes de section */
+
+
+
+
+/* Style pour la section des commentaires  pour le formulaire de la page d'index */
+.section-comment {
+    margin: 0 auto;
+    width: 80%;
+   padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top:30px;
+background-color: white;
+}
+
+
+/* Style pour le formulaire de commentaire */
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 20px; 
+    
+}
+
+/* Style pour les labels */
+#commentForm label {
+    margin-top: 10px;
+    font-weight: bold;
+   
+}
+
+/* Style pour les champs de saisie */
+#commentForm input[type="text"],
+#commentForm textarea {
+    margin-top: 5px;
+    padding: 9px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    
+}
+
+/* Style pour le textarea */
+#commentForm textarea {
+    resize: vertical;
+}
+
+/* Style pour le bouton de soumission */
+#commentForm button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #806347;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Effet au survol du bouton */
+#commentForm button:hover {
+    background-color: #ff7f00;
+}
+
+ .section-comment h4{
+    text-align: center;
+    font-size:18px;
+}
+
+
+
+
+
+
+
+
+
+        
